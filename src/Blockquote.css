@@ -1,0 +1,59 @@
+@keyframes blur {
+  0% { 
+    filter: brightness(1) contrast(0%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%);
+  }
+
+  20% { 
+    filter: blur(5px) brightness(0.4) contrast(20%) grayscale(10%) hue-rotate(20deg) invert(15%) saturate(30%) sepia(10%);
+  }
+
+  40% { 
+    filter: blur(10px) brightness(0.9) contrast(50%) grayscale(30%) hue-rotate(40deg) invert(35%) saturate(70%) sepia(30%);
+  }
+
+  60% { 
+    filter: blur(10px) brightness(0.6) contrast(70%) grayscale(50%) hue-rotate(60deg) invert(75%) saturate(50%) sepia(60%);
+  }
+
+  80% { 
+    filter: blur(5px) brightness(0.8) contrast(100%) grayscale(80%) hue-rotate(80deg) invert(55%) saturate(30%) sepia(30%);
+  }
+
+  100% { 
+    filter: brightness(0.4) contrast(140%) grayscale(100%) hue-rotate(20deg) invert(15%) saturate(10%) sepia(10%);
+  }
+}
+
+.Blockquote {
+  background-color: #45D19C;
+  height: 768px;
+  margin-left: -40px;
+  width: calc(100% + 80px);
+}
+
+.from-bottom {
+  padding-top: 2000px;
+}
+
+.from-top {
+  padding-bottom: 2000px;
+}
+
+.fixed .content {
+  background-color: #45D19C;
+  display: block;
+  height: 768px;
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+canvas {
+  padding: 100px 0 !important;
+}
+
+.fixed canvas {
+  animation: 3s infinite alternate blur;
+}
